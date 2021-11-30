@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="Background" x="0.0" y="0.0" width="1000.0"
+             height="600.0" fileName="{PROJECT_FOLDER}BG8.png"/>
+  <Component type="ScriptPanel" id="NavBoxPanel" x="60.0" y="0.0" width="880.0"
+             height="40.0" bgColour="16777215" itemColour="0" itemColour2="0"
+             textColour="16777215">
+    <Component type="ScriptButton" id="LogoWebButton" x="6.0" y="3.0" width="70.0"
+               height="32.0" filmstripImage="{PROJECT_FOLDER}NNButton.png" saveInPreset="0"
+               scaleFactor="0.125" parentComponent="NavBoxPanel"/>
+    <Component type="ScriptPanel" id="SampleFolderBackground" x="769.0" y="-2.0"
+               width="110" height="40" parentComponent="NavBoxPanel" bgColour="16777215"
+               textColour="16777215"/>
+  </Component>
+  <Component type="ScriptPanel" id="FXEditPanel" x="60.0" y="50.0" bgColour="16777215"
+             itemColour="0" itemColour2="0" textColour="16777215" width="875.0"
+             height="240.0">
+    <Component type="ScriptFloatingTile" id="PresetBrowserTile" x="259.0" y="2.0"
+               width="360.0" height="240.0" ContentType="PresetBrowser" bgColour="0"
+               itemColour="4283387727" itemColour2="0" Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: true,&#13;&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#13;&#10;  &quot;ShowFolderButton&quot;: false,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: true,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: false,&#13;&#10;  &quot;NumColumns&quot;: 1,&#13;&#10;  &quot;ColumnWidthRatio&quot;: [&#13;&#10;    0.3333333333333333,&#13;&#10;    0.3333333333333333,&#13;&#10;    0.3333333333333333&#13;&#10;  ]&#13;&#10;}"
+               textColour="4283387727" parentComponent="FXEditPanel"/>
+    <Component type="ScriptLabel" id="FXEditFilterLabel" x="3.0" y="0.0" fontSize="12.0"
+               width="123.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               text="FILTER" editable="0" parentComponent="FXEditPanel"/>
+    <Component type="ScriptSlider" id="FXEditFilterHP" x="27.0" y="19.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" max="20000.0" middlePosition="1500.0"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="HighPassMain" parameterId="Frequency" defaultValue="20.0"
+               stepSize="1.0" suffix="db" min="20.0"/>
+    <Component type="ScriptFloatingTile" id="HPDisplayTile" x="15.0" y="57.0"
+               ContentType="FilterDisplay" bgColour="3355443" itemColour="4284637794"
+               itemColour2="1627389951" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;HighPassMain&quot;,&#13;&#10;  &quot;Index&quot;: -1,&#13;&#10;  &quot;FollowWorkspace&quot;: false&#13;&#10;}"
+               parentComponent="FXEditPanel" textColour="4284637794" width="50.0"
+               height="50.0"/>
+    <Component type="ScriptLabel" id="HPLabel" x="30.0" y="47.0" parentComponent="FXEditPanel"
+               text="HP" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="30.0" height="15.0" editable="0"/>
+    <Component type="ScriptSlider" id="FXEditFilterLP" x="67.0" y="19.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" max="20000.0" middlePosition="1500.0"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="LowPassMain" parameterId="Frequency" defaultValue="20000.0"
+               stepSize="1.0" suffix="db" min="20.0"/>
+    <Component type="ScriptFloatingTile" id="LPDisplayTile" x="65.0" y="57.0"
+               ContentType="FilterDisplay" bgColour="3355443" itemColour="4284637794"
+               itemColour2="1627389951" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;LowPassMain&quot;,&#13;&#10;  &quot;Index&quot;: -1,&#13;&#10;  &quot;FollowWorkspace&quot;: false&#13;&#10;}"
+               parentComponent="FXEditPanel" textColour="4284637794" width="50.0"
+               height="50.0"/>
+    <Component type="ScriptLabel" id="LPLabel" x="70.0" y="47.0" parentComponent="FXEditPanel"
+               text="LP" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="30.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="FXEditWavesLabel" x="129.0" y="0.0" fontSize="12.0"
+               width="123.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               text="WAVES" editable="0" parentComponent="FXEditPanel"/>
+    <Component type="ScriptSlider" id="FXEditWavesFreq" x="153.0" y="19.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="TempoSync" max="18.0" stepSize="1.0" middlePosition="9.0"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="LFO Modulator1" parameterId="Frequency" defaultValue="5.0"
+               showValuePopup="Left"/>
+    <Component type="ScriptSlider" id="FXEditWavesFade" x="192.0" y="19.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Time" max="3000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="1000.0" parentComponent="FXEditPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="LFO Modulator1" parameterId="FadeIn"
+               defaultValue="750.0"/>
+    <Component type="ScriptSlider" id="FXEditWavesFlat" x="153.0" y="60.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Time" max="1000.0" stepSize="1.0" middlePosition="500.0"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="LFO Modulator1" parameterId="SmoothingTime" defaultValue="100.0"/>
+    <Component type="ScriptSlider" id="FXEditWavesWet" x="192.0" y="60.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="NormalizedPercentage" middlePosition="0.5"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="LFO Modulator1" parameterId="Intensity" suffix="%"/>
+    <Component type="ScriptLabel" id="FreqLabel2" x="151.0" y="47.0" parentComponent="FXEditPanel"
+               text="FREQ" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="FadeLabel" x="190.0" y="47.0" parentComponent="FXEditPanel"
+               text="FADE" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="FlatLabel" x="151.0" y="88.0" parentComponent="FXEditPanel"
+               text="FLAT" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="WetLabel" x="190.0" y="88.0" parentComponent="FXEditPanel"
+               text="WET" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="FXEditMechanicsLabel" x="3.0" y="121.0"
+               fontSize="12.0" width="123.0" height="20.0" fontStyle="Bold"
+               textColour="4284637794" text="MECHANICS" editable="0" parentComponent="FXEditPanel"/>
+    <Component type="ScriptSlider" id="FXEditMechanicsGain" x="7.0" y="140.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="Decibel"
+               max="30.0" middlePosition="0.0" parentComponent="FXEditPanel"
+               enableMidiLearn="0" scrollWheel="0" min="-30.0" processorId="MechanicsFilter"
+               parameterId="Gain"/>
+    <Component type="ScriptSlider" id="FXEditMechanicsFreq" x="46.0" y="140.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="Frequency"
+               max="20000.0" middlePosition="1500.0" parentComponent="FXEditPanel"
+               enableMidiLearn="0" scrollWheel="0" defaultValue="7500.0" min="20.0"
+               processorId="MechanicsFilter" parameterId="Freq"/>
+    <Component type="ScriptSlider" id="FXEditMechanicsQ" x="86.0" y="140.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" max="8.0"
+               middlePosition="4.0" parentComponent="FXEditPanel" enableMidiLearn="0"
+               scrollWheel="0" defaultValue="1.0" min="0.300000011920929" processorId="MechanicsFilter"
+               parameterId="Q"/>
+    <Component type="ScriptFloatingTile" id="MechanicsDisplayTile" x="15.0"
+               y="183.0" ContentType="FilterDisplay" bgColour="3355443" itemColour="4284637794"
+               itemColour2="1627389951" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;MechanicsFilter&quot;,&#13;&#10;  &quot;Index&quot;: -1,&#13;&#10;  &quot;FollowWorkspace&quot;: false&#13;&#10;}"
+               parentComponent="FXEditPanel" textColour="4284637794" width="100.0"
+               height="50.0"/>
+    <Component type="ScriptLabel" id="GainLabelFX" x="5.0" y="168.0" parentComponent="FXEditPanel"
+               text="GAIN" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="FreqLabel" x="45.0" y="168.0" parentComponent="FXEditPanel"
+               text="FREQ" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="QLabel" x="89.0" y="168.0" parentComponent="FXEditPanel"
+               text="Q" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="30.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="FXEditFeelLabel" x="128.0" y="121.0" fontSize="12.0"
+               width="123.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               text="FEEL" editable="0" parentComponent="FXEditPanel"/>
+    <Component type="ScriptSlider" id="FXEditFeelGain" x="132.0" y="140.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Decibel" max="30.0" middlePosition="0.0"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               min="-30.0" processorId="FeelMain" parameterId="Gain"/>
+    <Component type="ScriptSlider" id="FXEditFeelFreq" x="171.0" y="140.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" max="20000.0" middlePosition="1500.0"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               defaultValue="3500.0" min="20.0" processorId="FeelMain" parameterId="Freq"/>
+    <Component type="ScriptSlider" id="FXEditFeelQ" x="211.0" y="140.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" max="8.0" middlePosition="4.0" parentComponent="FXEditPanel"
+               enableMidiLearn="0" scrollWheel="0" defaultValue="1.0" min="0.300000011920929"
+               processorId="FeelMain" parameterId="Q"/>
+    <Component type="ScriptFloatingTile" id="FeelDisplayTile" x="140.0" y="183.0"
+               ContentType="FilterDisplay" bgColour="3355443" itemColour="4284637794"
+               itemColour2="1627389951" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;FeelMain&quot;,&#13;&#10;  &quot;Index&quot;: -1,&#13;&#10;  &quot;FollowWorkspace&quot;: false&#13;&#10;}"
+               parentComponent="FXEditPanel" textColour="4284637794" width="100.0"
+               height="50.0"/>
+    <Component type="ScriptLabel" id="GainLabelFX1" x="130.0" y="168.0" parentComponent="FXEditPanel"
+               text="GAIN" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="FreqLabel1" x="170.0" y="168.0" parentComponent="FXEditPanel"
+               text="FREQ" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="QLabel1" x="214.0" y="168.0" parentComponent="FXEditPanel"
+               text="Q" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="30.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="FXEditReverbLabel" x="628.0" y="0.0" fontSize="12.0"
+               width="248.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               text="REVERB" editable="0" parentComponent="FXEditPanel"/>
+    <Component type="ScriptSlider" id="FXEditReverbWet" x="828.0" y="69.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="NormalizedPercentage" middlePosition="0.5"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="ReverbMain" parameterId="WetLevel" suffix="%"/>
+    <Component type="ScriptSlider" id="FXEditReverbDamp" x="636.0" y="69.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="NormalizedPercentage"
+               middlePosition="0.5" parentComponent="FXEditPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="ReverbMain" parameterId="Damping"
+               suffix="%"/>
+    <Component type="ScriptSlider" id="FXEditReverbWide" x="700.0" y="69.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="NormalizedPercentage"
+               middlePosition="0.5" parentComponent="FXEditPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="ReverbMain" parameterId="Width"
+               suffix="%"/>
+    <Component type="ScriptSlider" id="FXEditReverbRoom" x="764.0" y="69.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="NormalizedPercentage"
+               middlePosition="0.5" parentComponent="FXEditPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="ReverbMain" parameterId="RoomSize"
+               suffix="%"/>
+    <Component type="ScriptSlider" id="FXEditReverbHP" x="700.0" y="21.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" max="20000.0" suffix=" ms" middlePosition="1500.0"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="ReverbHP" parameterId="Freq" defaultValue="20.0"
+               min="20.0"/>
+    <Component type="ScriptSlider" id="FXEditReverbLP" x="764.0" y="21.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" max="20000.0" suffix=" ms" middlePosition="1500.0"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="ReverbLP" parameterId="Freq" defaultValue="20000.0"
+               min="20.0"/>
+    <Component type="ScriptLabel" id="HPLabel1" x="703.0" y="49.0" parentComponent="FXEditPanel"
+               text="HP" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="30.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="LPLabel1" x="767.0" y="49.0" parentComponent="FXEditPanel"
+               text="LP" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="30.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="FXEditDelayLabel" x="628.0" y="121.0"
+               fontSize="12.0" width="248.0" height="20.0" fontStyle="Bold"
+               textColour="4284637794" text="DELAY" editable="0" parentComponent="FXEditPanel"/>
+    <Component type="ScriptSlider" id="FXEditDelayWet" x="732.0" y="193.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="NormalizedPercentage" middlePosition="0.5"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="DelayMain" parameterId="Mix" suffix="%"/>
+    <Component type="ScriptSlider" id="FXEditDelayTimeR" x="634.0" y="172.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="TempoSync"
+               max="18.0" stepSize="1.0" middlePosition="9.0" parentComponent="FXEditPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="DelayMain" parameterId="DelayTimeLeft"
+               defaultValue="5.0" showValuePopup="Left"/>
+    <Component type="ScriptSlider" id="FXEditDelayTimeL" x="670.0" y="172.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="TempoSync"
+               max="18.0" stepSize="1.0" middlePosition="9.0" parentComponent="FXEditPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="DelayMain" parameterId="DelayTimeRight"
+               defaultValue="5.0" showValuePopup="Right"/>
+    <Component type="ScriptSlider" id="FXEditDelayFeedBackR" x="794.0" y="172.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="NormalizedPercentage"
+               middlePosition="0.5" parentComponent="FXEditPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="DelayMain" parameterId="FeedbackLeft"
+               suffix="%"/>
+    <Component type="ScriptSlider" id="FXEditDelayFeedBackL" x="831.0" y="172.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="NormalizedPercentage"
+               middlePosition="0.5" parentComponent="FXEditPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="DelayMain" parameterId="FeedbackRight"
+               suffix="%"/>
+    <Component type="ScriptSlider" id="FXEditDelayLP" x="754.0" y="142.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" max="20000.0" suffix=" ms" middlePosition="1500.0"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="DelayLP" parameterId="Freq" defaultValue="20000.0"
+               min="20.0"/>
+    <Component type="ScriptSlider" id="FXEditDelayHP" x="710.0" y="142.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" max="20000.0" suffix=" ms" middlePosition="1500.0"
+               parentComponent="FXEditPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="DelayHP" parameterId="Freq" defaultValue="20.0"
+               min="20.0"/>
+    <Component type="ScriptLabel" id="HPLabel2" x="713.0" y="169.0" parentComponent="FXEditPanel"
+               text="HP" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="30.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="LPLabel2" x="757.0" y="169.0" parentComponent="FXEditPanel"
+               text="LP" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="30.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="DampLabel" x="634.0" y="97.0" parentComponent="FXEditPanel"
+               text="DAMP" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="WideLabel" x="698.0" y="97.0" parentComponent="FXEditPanel"
+               text="WIDE" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="RoomLabel" x="762.0" y="97.0" parentComponent="FXEditPanel"
+               text="ROOM" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="WetLabel3" x="826.0" y="97.0" parentComponent="FXEditPanel"
+               text="WET" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="DelayTimeLLabel" x="632.0" y="200.0" parentComponent="FXEditPanel"
+               text="L" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="DelayTimeRLabel" x="668.0" y="200.0" parentComponent="FXEditPanel"
+               text="R" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="WetLabel5" x="730.0" y="221.0" parentComponent="FXEditPanel"
+               text="WET" textColour="4284637794" fontSize="10.0" fontStyle="Bold"
+               width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="FXEditTimeLabel" x="645.0" y="155.0" fontSize="12.0"
+               width="50.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               text="TIME" editable="0" parentComponent="FXEditPanel"/>
+    <Component type="ScriptLabel" id="FXEditFeedbackLabel" x="800.0" y="155.0"
+               fontSize="12.0" width="60.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               text="FDBACK" editable="0" parentComponent="FXEditPanel"/>
+    <Component type="ScriptLabel" id="DelayTimeLLabel1" x="794.0" y="200.0"
+               parentComponent="FXEditPanel" text="L" textColour="4284637794"
+               fontSize="10.0" fontStyle="Bold" width="40.0" height="15.0" editable="0"/>
+    <Component type="ScriptLabel" id="DelayTimeRLabel1" x="830.0" y="200.0"
+               parentComponent="FXEditPanel" text="R" textColour="4284637794"
+               fontSize="10.0" fontStyle="Bold" width="40.0" height="15.0" editable="0"/>
+  </Component>
+  <Component type="ScriptPanel" id="MicInputsPanel" x="60.0" y="300.0" width="880.0"
+             height="190.0" itemColour="0" bgColour="0" itemColour2="0" textColour="0">
+    <Component type="ScriptButton" id="AKGPowerButton" x="39.0" y="32.0" width="16.0"
+               height="16.0" filmstripImage="{PROJECT_FOLDER}On-Off-Switch.png"
+               scaleFactor="0.4000000059604645" parentComponent="MicInputsPanel"
+               processorId="SamplerAKG" parameterId="Enabled" defaultValue="1.0"/>
+    <Component type="ScriptSlider" id="MicAKGAttackKnb" x="30.0" y="71.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="1000.0" parentComponent="MicInputsPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="DefaultEnvelope1" parameterId="Attack"
+               defaultValue="5.0"/>
+    <Component type="ScriptLabel" id="AttackLabel" x="38.0" y="96.0" fontSize="10.0"
+               text="A" width="20.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicAKGHPFiltKnb" x="56.0" y="47.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" min="20.0" max="20000.0" stepSize="1.0"
+               suffix=" Hz" middlePosition="1500.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="High Pass1"
+               parameterId="Frequency" defaultValue="20.0"/>
+    <Component type="ScriptLabel" id="HighPassLabel" x="62.0" y="72.0" fontSize="10.0"
+               text="HP" width="25.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicAKGLPFiltKnb" x="91.0" y="47.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" min="20.0" max="20000.0" stepSize="1.0"
+               suffix=" Hz" middlePosition="1500.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="Low Pass1" parameterId="Frequency"
+               defaultValue="20000.0"/>
+    <Component type="ScriptLabel" id="LowPassLabel" x="97.0" y="72.0" fontSize="10.0"
+               text="LP" width="25.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicAKGReleaseKnb" x="116.0" y="71.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="Time"
+               max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="MicInputsPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="DefaultEnvelope1" parameterId="Release" defaultValue="5000.0"/>
+    <Component type="ScriptLabel" id="ReleaseLabel" x="124.0" y="96.0" fontSize="10.0"
+               text="R" width="20.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicAKGGainKnb" x="65.0" y="86.0" filmstripImage="{PROJECT_FOLDER}gainknob101-2.png"
+               numStrips="101.0" width="55.0" height="55.0" scaleFactor="0.6000000238418579"
+               showTextBox="0" mode="Decibel" min="-80.0" max="30.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="Simple Gain1"
+               parameterId="Gain"/>
+    <Component type="ScriptLabel" id="GainLabel" x="74.0" y="135.0" fontSize="10.0"
+               text="GAIN" width="35.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicAKGPanKnb" x="41.0" y="150.0" filmstripImage="{PROJECT_FOLDER}panslider101-3.png"
+               numStrips="101.0" height="26.0" mode="Pan" min="-100.0" max="100.0"
+               stepSize="1.0" middlePosition="0.0" showTextBox="0" suffix="L"
+               parentComponent="MicInputsPanel" enableMidiLearn="0" scrollWheel="0"
+               scaleFactor="0.800000011920929" width="102.0" processorId="Simple Gain1"
+               parameterId="Balance"/>
+    <Component type="ScriptLabel" id="PanLabel" x="75.0" y="167.0" fontSize="10.0"
+               width="35.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" text="PAN" editable="0"/>
+    <Component type="ScriptButton" id="ATPowerButton" x="187.0" y="32.0" width="16.0"
+               height="16.0" filmstripImage="{PROJECT_FOLDER}On-Off-Switch.png"
+               scaleFactor="0.4000000059604645" parentComponent="MicInputsPanel"
+               processorId="SamplerAT" parameterId="Enabled" defaultValue="1.0"/>
+    <Component type="ScriptSlider" id="MicATAttackKnb" x="171.0" y="71.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="1000.0" parentComponent="MicInputsPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="DefaultEnvelope2" parameterId="Attack"
+               defaultValue="5.0"/>
+    <Component type="ScriptLabel" id="AttackLabel1" x="179.0" y="96.0" fontSize="10.0"
+               text="A" width="20.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicATHPFiltKnb" x="197.0" y="47.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" min="20.0" max="20000.0" stepSize="1.0"
+               suffix=" Hz" middlePosition="1500.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="High Pass2"
+               parameterId="Frequency" defaultValue="20.0"/>
+    <Component type="ScriptLabel" id="HighPassLabel1" x="203.0" y="72.0" fontSize="10.0"
+               text="HP" width="25.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicATLPFiltKnb" x="232.0" y="47.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" min="20.0" max="20000.0" stepSize="1.0"
+               suffix=" Hz" middlePosition="1500.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="Low Pass2" parameterId="Frequency"
+               defaultValue="20000.0"/>
+    <Component type="ScriptLabel" id="LowPassLabel1" x="238.0" y="72.0" fontSize="10.0"
+               text="LP" width="25.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicATReleaseKnb" x="257.0" y="71.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="1000.0" parentComponent="MicInputsPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="DefaultEnvelope2" parameterId="Release"
+               defaultValue="5000.0"/>
+    <Component type="ScriptLabel" id="ReleaseLabel1" x="265.0" y="96.0" fontSize="10.0"
+               text="R" width="20.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicATGainKnb" x="206.0" y="86.0" filmstripImage="{PROJECT_FOLDER}gainknob101-2.png"
+               numStrips="101.0" width="55.0" height="55.0" scaleFactor="0.6000000238418579"
+               showTextBox="0" mode="Decibel" min="-80.0" max="30.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="Simple Gain2"
+               parameterId="Gain"/>
+    <Component type="ScriptLabel" id="GainLabel1" x="215.0" y="135.0" fontSize="10.0"
+               text="GAIN" width="35.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicATPanKnb" x="182.0" y="150.0" filmstripImage="{PROJECT_FOLDER}panslider101-3.png"
+               numStrips="101.0" height="26.0" mode="Pan" min="-100.0" max="100.0"
+               stepSize="1.0" middlePosition="0.0" showTextBox="0" suffix="L"
+               parentComponent="MicInputsPanel" enableMidiLearn="0" scrollWheel="0"
+               scaleFactor="0.800000011920929" width="102.0" processorId="Simple Gain2"
+               parameterId="Balance"/>
+    <Component type="ScriptLabel" id="PanLabel1" x="216.0" y="167.0" fontSize="10.0"
+               width="35.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" text="PAN" editable="0"/>
+    <Component type="ScriptButton" id="SMPowerButton" x="615.0" y="32.0" width="16.0"
+               height="16.0" filmstripImage="{PROJECT_FOLDER}On-Off-Switch.png"
+               scaleFactor="0.4000000059604645" parentComponent="MicInputsPanel"
+               processorId="SamplerSM57" parameterId="Enabled" defaultValue="1.0"/>
+    <Component type="ScriptSlider" id="MicSMAttackKnb" x="589.0" y="71.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="1000.0" parentComponent="MicInputsPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="DefaultEnvelope3" parameterId="Attack"
+               defaultValue="5.0"/>
+    <Component type="ScriptLabel" id="AttackLabel2" x="597.0" y="96.0" fontSize="10.0"
+               text="A" width="20.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicSMHPFiltKnb" x="615.0" y="47.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" min="20.0" max="20000.0" stepSize="1.0"
+               suffix=" Hz" middlePosition="1500.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="High Pass3"
+               parameterId="Frequency" defaultValue="20.0"/>
+    <Component type="ScriptLabel" id="HighPassLabel2" x="621.0" y="72.0" fontSize="10.0"
+               text="HP" width="25.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicSMLPFiltKnb" x="650.0" y="47.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" min="20.0" max="20000.0" stepSize="1.0"
+               suffix=" Hz" middlePosition="1500.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="Low Pass3" parameterId="Frequency"
+               defaultValue="20000.0"/>
+    <Component type="ScriptLabel" id="LowPassLabel2" x="656.0" y="72.0" fontSize="10.0"
+               text="LP" width="25.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicSMReleaseKnb" x="675.0" y="71.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="1000.0" parentComponent="MicInputsPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="DefaultEnvelope3" parameterId="Release"
+               defaultValue="5000.0"/>
+    <Component type="ScriptLabel" id="ReleaseLabel2" x="683.0" y="96.0" fontSize="10.0"
+               text="R" width="20.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicSMGainKnb" x="624.0" y="86.0" filmstripImage="{PROJECT_FOLDER}gainknob101-2.png"
+               numStrips="101.0" width="55.0" height="55.0" scaleFactor="0.6000000238418579"
+               showTextBox="0" mode="Decibel" min="-80.0" max="30.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="Simple Gain3"
+               parameterId="Gain"/>
+    <Component type="ScriptLabel" id="GainLabel2" x="633.0" y="135.0" fontSize="10.0"
+               text="GAIN" width="35.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicSMPanKnb" x="600.0" y="150.0" filmstripImage="{PROJECT_FOLDER}panslider101-3.png"
+               numStrips="101.0" height="26.0" mode="Pan" min="-100.0" max="100.0"
+               stepSize="1.0" middlePosition="0.0" showTextBox="0" suffix="L"
+               parentComponent="MicInputsPanel" enableMidiLearn="0" scrollWheel="0"
+               scaleFactor="0.800000011920929" width="102.0" processorId="Simple Gain3"
+               parameterId="Balance"/>
+    <Component type="ScriptLabel" id="PanLabel2" x="634.0" y="167.0" fontSize="10.0"
+               width="35.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" text="PAN" editable="0"/>
+    <Component type="ScriptButton" id="H4NPowerButton" x="742.0" y="32.0" width="16.0"
+               height="16.0" filmstripImage="{PROJECT_FOLDER}On-Off-Switch.png"
+               scaleFactor="0.4000000059604645" parentComponent="MicInputsPanel"
+               processorId="SamplerH4N" parameterId="Enabled" defaultValue="1.0"/>
+    <Component type="ScriptSlider" id="MicH4NAttackKnb" x="727.0" y="71.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="1000.0" parentComponent="MicInputsPanel" enableMidiLearn="0"
+               scrollWheel="0" processorId="DefaultEnvelope4" parameterId="Attack"
+               defaultValue="5.0"/>
+    <Component type="ScriptLabel" id="AttackLabel3" x="735.0" y="96.0" fontSize="10.0"
+               text="A" width="20.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicH4NHPFiltKnb" x="753.0" y="47.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" min="20.0" max="20000.0" stepSize="1.0"
+               suffix=" Hz" middlePosition="1500.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="High Pass4"
+               parameterId="Frequency" defaultValue="20.0"/>
+    <Component type="ScriptLabel" id="HighPassLabel3" x="759.0" y="72.0" fontSize="10.0"
+               text="HP" width="25.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicH4NLPFiltKnb" x="788.0" y="47.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="37.0" height="37.0" scaleFactor="0.4000000059604645"
+               itemColour="3355443" itemColour2="1118481" textColour="16777215"
+               showTextBox="0" mode="Frequency" min="20.0" max="20000.0" stepSize="1.0"
+               suffix=" Hz" middlePosition="1500.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="Low Pass4" parameterId="Frequency"
+               defaultValue="20000.0"/>
+    <Component type="ScriptLabel" id="LowPassLabel3" x="794.0" y="72.0" fontSize="10.0"
+               text="LP" width="25.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicH4NReleaseKnb" x="813.0" y="71.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="37.0" height="37.0" scaleFactor="0.4000000059604645" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="Time"
+               max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="MicInputsPanel" enableMidiLearn="0" scrollWheel="0"
+               processorId="DefaultEnvelope4" parameterId="Release" defaultValue="5000.0"/>
+    <Component type="ScriptLabel" id="ReleaseLabel3" x="821.0" y="96.0" fontSize="10.0"
+               text="R" width="20.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicH4NGainKnb" x="762.0" y="86.0" filmstripImage="{PROJECT_FOLDER}gainknob101-2.png"
+               numStrips="101.0" width="55.0" height="55.0" scaleFactor="0.6000000238418579"
+               showTextBox="0" mode="Decibel" min="-80.0" max="30.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="MicInputsPanel"
+               enableMidiLearn="0" scrollWheel="0" processorId="Simple Gain4"
+               parameterId="Gain"/>
+    <Component type="ScriptLabel" id="GainLabel3" x="771.0" y="135.0" fontSize="10.0"
+               text="GAIN" width="35.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" editable="0"/>
+    <Component type="ScriptSlider" id="MicH4NPanKnb" x="738.0" y="150.0" filmstripImage="{PROJECT_FOLDER}panslider101-3.png"
+               numStrips="101.0" height="26.0" mode="Pan" min="-100.0" max="100.0"
+               stepSize="1.0" middlePosition="0.0" showTextBox="0" suffix="L"
+               enableMidiLearn="0" scrollWheel="0" scaleFactor="0.800000011920929"
+               width="102.0" parentComponent="MicInputsPanel" processorId="Simple Gain4"
+               parameterId="Balance"/>
+    <Component type="ScriptLabel" id="PanLabel3" x="772.0" y="167.0" fontSize="10.0"
+               width="35.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="MicInputsPanel" text="PAN" editable="0"/>
+  </Component>
+  <Component type="ScriptPanel" id="FXMainKnbsPanel" x="60.0" y="490.0" bgColour="16777215"
+             itemColour="0" itemColour2="0" textColour="16777215" width="880.0"
+             height="110.0">
+    <Component type="ScriptSlider" id="FXMainGainKnb" x="392.0" y="6.0" filmstripImage="{PROJECT_FOLDER}gainknob101-2.png"
+               numStrips="101.0" width="100.0" height="100.0" showTextBox="0"
+               mode="Decibel" min="-80.0" max="30.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" scaleFactor="1.100000023841858"
+               enableMidiLearn="0" scrollWheel="0" parentComponent="FXMainKnbsPanel"
+               processorId="SimpleGainMain" parameterId="Gain" defaultValue="-18.0"/>
+    <Component type="ScriptSlider" id="FXMainMechanicsKnb" x="43.0" y="18.0"
+               filmstripImage="{PROJECT_FOLDER}fxknobwht79.png" numStrips="79.0"
+               width="73.0" height="73.0" itemColour="3355443" itemColour2="1118481"
+               textColour="16777215" showTextBox="0" mode="Decibel" max="30.0"
+               stepSize="0.1000000014901161" middlePosition="-18.0" enableMidiLearn="0"
+               scrollWheel="0" scaleFactor="0.800000011920929" parentComponent="FXMainKnbsPanel"
+               processorId="Simple Gain5" parameterId="Gain" min="-80.0" defaultValue="-20.0"/>
+    <Component type="ScriptLabel" id="FXMechanicsLabel" x="41.0" y="9.0" fontSize="12.0"
+               width="75.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="FXMainKnbsPanel" text="MECHANICS" editable="0"/>
+    <Component type="ScriptSlider" id="FXMainFeelKnb" x="162.0" y="18.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="73.0" height="73.0" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="Decibel"
+               max="30.0" middlePosition="0.0" enableMidiLearn="0" scrollWheel="0"
+               scaleFactor="0.800000011920929" parentComponent="FXMainKnbsPanel"
+               min="-30.0" saveInPreset="0" processorId="" linkedTo="FXEditFeelGain"/>
+    <Component type="ScriptLabel" id="FXFeelLabel" x="173.0" y="9.0" fontSize="12.0"
+               width="50.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="FXMainKnbsPanel" text="FEEL" editable="0"/>
+    <Component type="ScriptSlider" id="FXMainWidthKnb" x="281.0" y="18.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="73.0" height="73.0" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" max="200.0"
+               stepSize="0.1000000014901161" middlePosition="100.0" enableMidiLearn="0"
+               scrollWheel="0" scaleFactor="0.800000011920929" parentComponent="FXMainKnbsPanel"
+               processorId="SimpleGainMain" parameterId="Width" defaultValue="100.0"/>
+    <Component type="ScriptLabel" id="FXWidthLabel" x="287.0" y="9.0" fontSize="12.0"
+               width="60.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="FXMainKnbsPanel" text="WIDTH" editable="0"/>
+    <Component type="ScriptSlider" id="FXMainWavesKnb" x="530.0" y="18.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="73.0" height="73.0" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="NormalizedPercentage"
+               middlePosition="0.5" enableMidiLearn="0" scrollWheel="0" scaleFactor="0.800000011920929"
+               parentComponent="FXMainKnbsPanel" saveInPreset="0" processorId=""
+               linkedTo="FXEditWavesWet" suffix="%"/>
+    <Component type="ScriptLabel" id="FXWavesLabel" x="536.0" y="9.0" fontSize="12.0"
+               width="60.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="FXMainKnbsPanel" text="WAVES" editable="0"/>
+    <Component type="ScriptSlider" id="FXMainReverbKnb" x="649.0" y="18.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="73.0" height="73.0" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="NormalizedPercentage"
+               suffix="%" middlePosition="0.5" enableMidiLearn="0" scrollWheel="0"
+               scaleFactor="0.800000011920929" parentComponent="FXMainKnbsPanel"
+               saveInPreset="0" processorId="" linkedTo="FXEditReverbWet"/>
+    <Component type="ScriptLabel" id="FXReverbLabel" x="655.0" y="9.0" fontSize="12.0"
+               width="60.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="FXMainKnbsPanel" text="REVERB" editable="0"/>
+    <Component type="ScriptSlider" id="FXMainDelayKnb" x="768.0" y="18.0" filmstripImage="{PROJECT_FOLDER}fxknobwht79.png"
+               numStrips="79.0" width="73.0" height="73.0" itemColour="3355443"
+               itemColour2="1118481" textColour="16777215" showTextBox="0" mode="NormalizedPercentage"
+               suffix="%" middlePosition="0.5" enableMidiLearn="0" scrollWheel="0"
+               scaleFactor="0.800000011920929" parentComponent="FXMainKnbsPanel"
+               saveInPreset="0" processorId="" linkedTo="FXEditDelayWet"/>
+    <Component type="ScriptLabel" id="FXDelayLabel" x="774.0" y="9.0" fontSize="12.0"
+               width="60.0" height="20.0" fontStyle="Bold" textColour="4284637794"
+               parentComponent="FXMainKnbsPanel" text="DELAY" editable="0"/>
+  </Component>
+  <Component type="ScriptLabel" id="SETTINGS" x="833.0" y="4.0"/>
+  <Component type="ScriptButton" id="hideShow" x="841.0" y="6.0" filmstripImage="{PROJECT_FOLDER}On-Off-Switch.png"
+             scaleFactor=".5" width="20.0" height="20"/>
+  <Component type="ScriptPanel" id="panel1" x="640" y="37" width="350" height="450"
+             itemColour="4207862468" itemColour2="4199306312" visible="0">
+    <Component type="ScriptFloatingTile" id="FloatingTile1" x="0.0" y="0.0"
+               ContentType="CustomSettings" bgColour="4278190080" itemColour="0"
+               itemColour2="0" Data="{&#13;&#10;  &quot;Driver&quot;: true,&#13;&#10;  &quot;Device&quot;: true,&#13;&#10;  &quot;Output&quot;: true,&#13;&#10;  &quot;BufferSize&quot;: true,&#13;&#10;  &quot;SampleRate&quot;: true,&#13;&#10;  &quot;GlobalBPM&quot;: true,&#13;&#10;  &quot;StreamingMode&quot;: true,&#13;&#10;  &quot;ScaleFactor&quot;: true,&#13;&#10;  &quot;VoiceAmountMultiplier&quot;: true,&#13;&#10;  &quot;ClearMidiCC&quot;: true,&#13;&#10;  &quot;SampleLocation&quot;: true,&#13;&#10;  &quot;DebugMode&quot;: true,&#13;&#10;  &quot;ScaleFactorList&quot;: [&#13;&#10;    0.5,&#13;&#10;    0.75,&#13;&#10;    1.0,&#13;&#10;    1.25,&#13;&#10;    1.5,&#13;&#10;    2.0&#13;&#10;  ]&#13;&#10;}"
+               parentComponent="panel1" width="350.0" height="450.0"/>
+  </Component>
+</ContentProperties>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset Version="1.0.0">
+  <Content Processor="Interface">
+    <Control type="ScriptSlider" id="FXEditFilterHP" value="147.0"/>
+    <Control type="ScriptSlider" id="FXEditFilterLP" value="20000.0"/>
+    <Control type="ScriptSlider" id="FXEditWavesFreq" value="9.0"/>
+    <Control type="ScriptSlider" id="FXEditWavesFade" value="661.0"/>
+    <Control type="ScriptSlider" id="FXEditWavesFlat" value="248.0"/>
+    <Control type="ScriptSlider" id="FXEditWavesWet" value="0.2800000011920929"/>
+    <Control type="ScriptSlider" id="FXEditMechanicsGain" value="0.0"/>
+    <Control type="ScriptSlider" id="FXEditMechanicsFreq" value="7500.0"/>
+    <Control type="ScriptSlider" id="FXEditMechanicsQ" value="1.0"/>
+    <Control type="ScriptSlider" id="FXEditFeelGain" value="-6.0"/>
+    <Control type="ScriptSlider" id="FXEditFeelFreq" value="3756.389892578125"/>
+    <Control type="ScriptSlider" id="FXEditFeelQ" value="0.9100000262260437"/>
+    <Control type="ScriptSlider" id="FXEditReverbWet" value="0.4399999976158142"/>
+    <Control type="ScriptSlider" id="FXEditReverbDamp" value="0.4300000071525574"/>
+    <Control type="ScriptSlider" id="FXEditReverbWide" value="0.7200000286102295"/>
+    <Control type="ScriptSlider" id="FXEditReverbRoom" value="0.8899999856948853"/>
+    <Control type="ScriptSlider" id="FXEditReverbHP" value="49.34999847412109"/>
+    <Control type="ScriptSlider" id="FXEditReverbLP" value="20000.0"/>
+    <Control type="ScriptSlider" id="FXEditDelayWet" value="0.1800000071525574"/>
+    <Control type="ScriptSlider" id="FXEditDelayTimeR" value="6.0"/>
+    <Control type="ScriptSlider" id="FXEditDelayTimeL" value="5.0"/>
+    <Control type="ScriptSlider" id="FXEditDelayFeedBackR" value="0.3799999952316284"/>
+    <Control type="ScriptSlider" id="FXEditDelayFeedBackL" value="0.3799999952316284"/>
+    <Control type="ScriptSlider" id="FXEditDelayLP" value="20000.0"/>
+    <Control type="ScriptSlider" id="FXEditDelayHP" value="44.63999938964844"/>
+    <Control type="ScriptButton" id="AKGPowerButton" value="1.0"/>
+    <Control type="ScriptSlider" id="MicAKGAttackKnb" value="66.0"/>
+    <Control type="ScriptSlider" id="MicAKGHPFiltKnb" value="735.0"/>
+    <Control type="ScriptSlider" id="MicAKGLPFiltKnb" value="1250.0"/>
+    <Control type="ScriptSlider" id="MicAKGReleaseKnb" value="5000.0"/>
+    <Control type="ScriptSlider" id="MicAKGGainKnb" value="-15.09999942779541"/>
+    <Control type="ScriptSlider" id="MicAKGPanKnb" value="0.0"/>
+    <Control type="ScriptButton" id="ATPowerButton" value="1.0"/>
+    <Control type="ScriptSlider" id="MicATAttackKnb" value="62.0"/>
+    <Control type="ScriptSlider" id="MicATHPFiltKnb" value="2538.0"/>
+    <Control type="ScriptSlider" id="MicATLPFiltKnb" value="20000.0"/>
+    <Control type="ScriptSlider" id="MicATReleaseKnb" value="5000.0"/>
+    <Control type="ScriptSlider" id="MicATGainKnb" value="-1.19999885559082"/>
+    <Control type="ScriptSlider" id="MicATPanKnb" value="100.0"/>
+    <Control type="ScriptButton" id="SMPowerButton" value="1.0"/>
+    <Control type="ScriptSlider" id="MicSMAttackKnb" value="75.0"/>
+    <Control type="ScriptSlider" id="MicSMHPFiltKnb" value="2537.0"/>
+    <Control type="ScriptSlider" id="MicSMLPFiltKnb" value="20000.0"/>
+    <Control type="ScriptSlider" id="MicSMReleaseKnb" value="5000.0"/>
+    <Control type="ScriptSlider" id="MicSMGainKnb" value="8.100001335144043"/>
+    <Control type="ScriptSlider" id="MicSMPanKnb" value="-100.0"/>
+    <Control type="ScriptButton" id="H4NPowerButton" value="1.0"/>
+    <Control type="ScriptSlider" id="MicH4NAttackKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="MicH4NHPFiltKnb" value="197.0"/>
+    <Control type="ScriptSlider" id="MicH4NLPFiltKnb" value="528.0"/>
+    <Control type="ScriptSlider" id="MicH4NReleaseKnb" value="5000.0"/>
+    <Control type="ScriptSlider" id="MicH4NGainKnb" value="12.30000114440918"/>
+    <Control type="ScriptSlider" id="MicH4NPanKnb" value="0.0"/>
+    <Control type="ScriptSlider" id="FXMainGainKnb" value="-18.0"/>
+    <Control type="ScriptSlider" id="FXMainMechanicsKnb" value="-80.0"/>
+    <Control type="ScriptSlider" id="FXMainWidthKnb" value="100.0"/>
+  </Content>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Preset>
